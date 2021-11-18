@@ -142,7 +142,7 @@ public class CoffeeMakerTest {
 		assertEquals(12, inventory.getCoffee());
 
 	}
-
+	// Check that you get an inventory exception when entering negative number for sugar
 	@Test(expected = InventoryException.class)
 	public void testAddInventoryExceptionSugar() throws InventoryException {
 		coffeeMaker.addInventory("4", "1", "-2", "3");

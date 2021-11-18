@@ -143,7 +143,7 @@ public class CoffeeMakerTest {
 		assertEquals(12, inventory.getCoffee());
 
 	}
-
+// Check that adding negative units of sugar throws an exception.
 	@Test(expected = InventoryException.class)
 	public void testAddInventoryExceptionSugar() throws InventoryException {
 		coffeeMaker.addInventory("4", "1", "-2", "3");
